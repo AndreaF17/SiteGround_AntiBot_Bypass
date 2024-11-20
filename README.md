@@ -7,8 +7,8 @@ This is a proof-of-concept (PoC) script designed to bypass SiteGround's AI-power
 To use this script, you'll need to have the following prerequisites installed:
 
 - Python 3.x
-- Selenium WebDriver for Firefox (install using pip install selenium)
-- requests library (install using pip install requests)
+- Selenium WebDriver for Firefox
+- requests library
 1. Clone or download this repository.
 2. Install the required dependencies by running `pip install -r requirements.txt`.
 3. Update the `TARGET` variable in the script with your desired target URL.
