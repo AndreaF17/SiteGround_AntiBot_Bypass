@@ -2,6 +2,24 @@
 
 This is a proof-of-concept (PoC) script designed to bypass SiteGround's AI-powered antibot protection. The script utilizes Selenium WebDriver and Python's `requests` library to automate a browser session on Firefox.
 
+## Insight
+Siteground triggers the Antibot process when:
+
+* The IP address is reported.
+* The IP address makes extensive interactions with the endpoint.
+
+After performing some reverse-engineering, I observed that Siteground's antibot detection mechanism creates a cookie with the following format:
+
+```
+_I_: 89d4b4400b603ce9ee6e1afecdbc09488b45aae90cbdcb5f9b63a5437fd8881c-1747298858
+```
+
+The cookie's value is generated using the `User Agent` information extracted from the request being checked.
+
+Once the `_I_` value has been established, Siteground's Antibot Detection does not further evaluate the subsequent request behavior.
+
+
+
 ## Usage
 
 To use this script, you'll need to have the following prerequisites installed:
