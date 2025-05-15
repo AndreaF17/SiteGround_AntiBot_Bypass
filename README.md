@@ -18,7 +18,7 @@ The cookie's value is generated using the `User Agent` information extracted fro
 
 Once the `_I_` value has been established, Siteground's Antibot Detection does not further evaluate the subsequent request behavior.
 
-==The cookie can be used for at least 12 hours.==
+The cookie can be used for at least 12 hours.
 
 ## Usage
 
